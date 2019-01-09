@@ -15,6 +15,10 @@ h1, h2{
       
        
        th, td{
+        
+        padding: 0.5rem;
+       }
+       thead th, tbody th, tbody td{
         border: 1px solid #ddd;
        }
         
@@ -22,25 +26,22 @@ h1, h2{
       
       caption{ font-weight: bold;
                text-align: left;
-               margin: 1rem;
+               margin-bottom: 1rem;
               }
 
               
-          th, tr, td{
-             padding: 0.5rem;
-             text-align: center;
-           }
-           thead{
+          
+           thead th{
             background-color: #3c89ba;
             color: #fff;
           }
-          tbody>tr>th{
+          tbody th{
           background-color: #fffbcf;
         }
         
           
   
-        tbody>tr>td.version{
+        td.version{
           font-size: 130%;
           text-align: center;
           
@@ -54,8 +55,8 @@ h1, h2{
           background-color: #eee;
         }
 
-       code.version{
-          border-color: rgba(255, 0, 0, 0.15);
-          background-color: rgba(255, 0, 0, 0.3);
+       td .version{
+          border: 1px solid rgba(255, 0, 0, .3);
+          background-color: rgba(255, 0, 0, .15);
       
         }
